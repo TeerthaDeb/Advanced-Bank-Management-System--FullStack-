@@ -1,0 +1,103 @@
+<!-- Input needed for this page : Year -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Software Registration System</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+        <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel = "stylesheet" type="text/css" href="../../Public/styles/wave.css">
+        <link rel="stylesheet" type="text/css" href="../../Public/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="../../Public/styles/LoginFormStyle.css">
+    </head>
+
+    <body>
+        
+        <!-- Header Starts -->
+            <%-include("header.ejs")%>
+        <!--Header ends here-->
+
+        <div id="customer's Log in form" class = "wave_class">
+            <img src= "../../Public/images/securedLogIn.png" alt="image" class="login__bg">
+
+            <div class="login">
+                <form action="" class="login__form">
+                    <h1 class="login__title">Login</h1>
+        
+                    <div class="login__inputs">
+                        <div class="login__box">
+                            <input type="email" placeholder="Email ID" required class="login__input">
+                            <i class="ri-mail-fill"></i>
+                        </div>
+        
+                        <div class="login__box">
+                            <input type="password" placeholder="Password" required class="login__input">
+                            <i class="ri-lock-2-fill"></i>
+                        </div>
+                    </div>
+        
+                    <div class="login__check">
+                        <div class="login__check-box">
+                            <input type="checkbox" class="login__check-input" id="user-check">
+                            <label for="user-check" class="login__check-label">Remember me</label>
+                        </div>
+        
+                        <a href="#" class="login__forgot">Forgot Password?</a>
+                    </div>
+        
+                    <button type="submit" class="login__button">Login</button>
+        
+                    <div class="login__register">
+                        Don't have an account? <a href="Client's SignUp Form.html">Register</a>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <div id="Wave">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" class="py 30">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+
+        </div>
+
+
+        <!--Footer Starts-->
+            <%-include("footer.ejs") , {Year : Year}%>
+        <!--Footer Ends-->
+        
+        <!--CDN Script-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous">
+        </script>
+        
+
+
+        <!--My script-->
+        <script>
+
+        </script>
+          
+        
+        <!--Other Scripts-->
+        <script src = "scripts/clients_login_form.js"></script>
+
+    </body>
+
+</html>

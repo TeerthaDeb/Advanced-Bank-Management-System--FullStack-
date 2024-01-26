@@ -1,0 +1,113 @@
+<!-- Input needed for this page : Year -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Registration System</title>
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Public/styles/wave.css">
+  </head>
+
+  <body>
+    <!-- Header Starts -->
+    <%-include("header.ejs")%>
+    <!--Header ends here-->
+
+    <!---->
+    
+    <div class="wave_class">
+      <!--In the middle of the wave-->
+      <div class="inner-header flex">
+        <div id = "Main content" class = "container">
+          <div class="welcome-section">
+            <div class="welcome-content">
+              <h1>Welcome to Advanced Bank</h1>
+              <p>Your trusted partner for secure and innovative banking solutions</p>
+              <a href="#services" class="btn">Explore Our Services</a>
+            </div>
+            
+            <div class="benefits">
+              <h2 class = "left" >Why Choose Us?</h2>
+              <ul>
+                <li> 
+                  <div class="benefit-item">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Transactions</h3>
+                    <p>We prioritize the security of your transactions with cutting-edge technology.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="benefit-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Customer-Centric Approach</h3>
+                    <p>Our focus is on delivering excellent service tailored to our customers' needs.</p>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="benefit-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Innovative Solutions</h3>
+                    <p>Experience our latest banking tools and innovative financial solutions.</p>
+                  </div>
+                </li>
+              </ul>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--/In the middle of the wave-->
+      
+      <!-- Bottom of the wave -->
+
+      <!-- /Bottom of the wave -->
+
+      <!--Waves Container-->
+      <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+
+    <!--Waves end-->
+
+    </div>
+    <!--Header ends-->
+
+    <!--Content starts-->
+    <!--Content ends-->
+    <!--///-->
+    
+    <!-- Devider -->
+    <div class="b-example-divider"></div>
+    <!-- /Devider -->
+    
+    <!--Footer Starts-->
+    <%-include("footer.ejs") , {Year : Year}%>
+    <!--Footer Ends-->
+    <!--CDN Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!--My script-->
+    <script>
+
+    </script>
+    
+    <!--Other Scripts-->
+  </body>
+
+</html>

@@ -1,0 +1,372 @@
+<!-- Input needed for this page : Year -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Registration System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Public/styles/wave.css">
+    <link rel="stylesheet" type="text/css" href="../Public/styles/style.css">
+  </head>
+
+  <body>
+
+    <!-- Header Starts -->
+      <%-include("header.ejs")%>
+    <!--Header ends here-->
+
+      <div id="redirectToLoginPage" class="container">
+        <p>
+          Discover the benefits of being part of our community.
+          <br />
+          <a href="/Client-s-LogIn-Form" class="login-link">Log In</a>
+        </p>
+      </div>
+
+
+      <div id="Client_log_in_sign_up" class="container wave_class">
+        <section class=" h-custom">
+          <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-12">
+                <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                  <div class="card-body p-0">
+                    <div class="row g-0">
+                      <div class="col-lg-6">
+                        <div class="p-5">
+                          <h3 class="fw-normal mb-5" style="color: #4835d4;">General Infomation</h3>
+
+                          <div class="mb-4 pb-2">
+                            <select class="select">
+                              <option value="1">Title</option>
+                              <option value="2">Mr.</option>
+                              <option value="3">Ms.</option>
+                              <option value="4">Mrs.</option>
+                            </select>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-6 mb-4 pb-2">
+
+                              <div class="form-outline">
+                                <input type="text" id="form3Examplev2" class="form-control form-control-lg">
+                                <label class="form-label" for="form3Examplev2">First name</label>
+                              </div>
+
+                            </div>
+                            <div class="col-md-6 mb-4 pb-2">
+
+                              <div class="form-outline">
+                                <input type="text" id="form3Examplev3" class="form-control form-control-lg">
+                                <label class="form-label" for="form3Examplev3">Last name</label>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="mb-4 pb-2">
+                            <select class="select" id="Position">
+                              <option value="1">Position</option>
+                              <option value="2">Student</option>
+                              <option value="3">Employeed</option>
+                              <option value="4">No Employeed / Retired</option>
+                            </select>
+                          </div>
+
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline">
+                              <input type="text" id="form3Examplev4" class="form-control form-control-lg">
+                              <label class="form-label" for="form3Examplev4">Position</label>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
+
+                              <div class="form-outline">
+                                <input type="text" id="form3Examplev5" class="form-control form-control-lg">
+                                <label class="form-label" for="form3Examplev5">Bussines Arena</label>
+                              </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+                              <select class="select">
+                                <option value="1">Employees</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                              </select>
+
+                            </div>
+                          </div>
+
+                          <div class="mb-4 pb-2 py-5">
+                            <label class="form-label" for="dobDay">Date of Birth</label>
+                            <div class="row">
+                              <div class="col">
+                                <select class="form-select" id="dobDay" name="dobDay">
+                                  <option value="" disabled selected>Day</option>
+
+                                </select>
+                              </div>
+                              <div class="col">
+                                <select class="form-select" id="dobMonth" name="dobMonth">
+                                  <option value="" disabled selected>Month</option>
+                                  <option value="1">January</option>
+                                  <option value="2">February</option>
+                                  <option value="3">March</option>
+                                  <option value="4">April</option>
+                                  <option value="5">May</option>
+                                  <option value="6">June</option>
+                                  <option value="7">July</option>
+                                  <option value="8">August</option>
+                                  <option value="9">September</option>
+                                  <option value="10">October</option>
+                                  <option value="11">November</option>
+                                  <option value="12">December</option>
+                                </select>
+                              </div>
+                              <div class="col">
+                                <select class="form-select" id="dobYear" name="dobYear">
+                                  <option value="" disabled selected>Year</option>
+
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                      <div class="col-lg-6 bg-indigo text-white">
+                        <div class="p-5">
+                          <h3 class="fw-normal mb-5">Contact Details</h3>
+
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea2" class="form-control form-control-lg">
+                              <label class="form-label" for="form3Examplea2">Street + Nr</label>
+                            </div>
+                          </div>
+
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea3" class="form-control form-control-lg">
+                              <label class="form-label" for="form3Examplea3">Additional Information</label>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-5 mb-4 pb-2">
+
+                              <div class="form-outline form-white">
+                                <input type="text" id="form3Examplea4" class="form-control form-control-lg">
+                                <label class="form-label" for="form3Examplea4">Zip Code</label>
+                              </div>
+
+                            </div>
+                            <div class="col-md-7 mb-4 pb-2">
+
+                              <div class="form-outline form-white">
+                                <input type="text" id="form3Examplea5" class="form-control form-control-lg">
+                                <label class="form-label" for="form3Examplea5">Place</label>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea6" class="form-control form-control-lg">
+                              <label class="form-label" for="form3Examplea6">Country</label>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-5 mb-4 pb-2">
+
+                              <div class="form-outline form-white">
+                                <input type="text" id="form3Examplea7" class="form-control form-control-lg">
+                                <label class="form-label" for="form3Examplea7">Code +</label>
+                              </div>
+
+                            </div>
+                            <div class="col-md-7 mb-4 pb-2">
+
+                              <div class="form-outline form-white">
+                                <input type="text" id="form3Examplea8" class="form-control form-control-lg">
+                                <label class="form-label" for="form3Examplea8">Phone Number</label>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="mb-4">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea9" class="form-control form-control-lg">
+                              <label class="form-label" for="form3Examplea9">Your Email</label>
+                            </div>
+                          </div>
+
+                          <div class = "mb-4">
+                            <div class="form-outline form-white">
+                              <input type = "password" id = "Password" class = "form-control form-control-lg">
+                              <label class = "form-label" for = "Password">Your Password</label>
+                            </div>
+                          </div>
+
+                          <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                            <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c">
+                            <label class="form-check-label text-white" for="form2Example3">
+                              I do accept the <a href="/Privacy_Policy" class="text-white"><u>Terms and Conditions</u></a> of your
+                              site.
+                            </label>
+                          </div>
+
+                          <button type="button" class="btn btn-light btn-lg"
+                            data-mdb-ripple-color="dark">Register</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="Wave">
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" class="py - 10">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+
+      </div>
+
+      
+      <!--Footer Starts-->
+        <%-include("footer.ejs") , {Year : Year}%>
+      <!--Footer Ends-->
+      
+
+      <!--CDN Script-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+
+
+      <!--My script-->
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Get the select element
+          var positionSelect = document.getElementById('Position');
+          // Get the input element
+          var inputField = document.getElementById('form3Examplev4');
+          // Get the label element
+          var label = document.querySelector('label[for="form3Examplev4"]');
+
+          // Add event listener to the select element
+          positionSelect.addEventListener('change', function () {
+            // Check the selected value
+            var selectedValue = positionSelect.value;
+
+            // Change the label and placeholder based on the selected value
+            switch (selectedValue) {
+              case '1':
+                label.innerText = 'Position';
+                inputField.placeholder = '';
+                break;
+              case '2':
+                label.innerText = 'School Name';
+                inputField.placeholder = 'Enter School Name';
+                break;
+              case '3':
+                label.innerText = 'Company';
+                inputField.placeholder = 'Enter Company Name';
+                break;
+              case '4':
+                label.innerText = 'Specify';
+                inputField.placeholder = 'Specify';
+                break;
+              default:
+                label.innerText = 'Position';
+                inputField.placeholder = '';
+                break;
+            }
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+          // Get the select elements
+          var dobDaySelect = document.getElementById('dobDay');
+          var dobMonthSelect = document.getElementById('dobMonth');
+          var dobYearSelect = document.getElementById('dobYear');
+
+          // Function to populate days based on the selected month and year
+          function populateDays() {
+            var selectedMonth = dobMonthSelect.value;
+            var selectedYear = dobYearSelect.value;
+            var daysInMonth = new Date(selectedYear, selectedMonth, 0).getDate();
+
+            // Clear current options
+            dobDaySelect.innerHTML = '<option value="" disabled selected>Day</option>';
+
+            // Populate days
+            for (var i = 1; i <= daysInMonth; i++) {
+              var option = document.createElement('option');
+              option.value = i;
+              option.text = i;
+              dobDaySelect.appendChild(option);
+            }
+          }
+
+          // Function to populate years
+          function populateYears() {
+            var currentYear = new Date().getFullYear();
+            var startYear = currentYear - 100; // Change the range as needed
+
+            // Clear current options
+            dobYearSelect.innerHTML = '<option value="" disabled selected>Year</option>';
+
+            // Populate years
+            for (var i = currentYear; i >= startYear; i--) {
+              var option = document.createElement('option');
+              option.value = i;
+              option.text = i;
+              dobYearSelect.appendChild(option);
+            }
+          }
+
+          // Event listeners for month and year changes
+          dobMonthSelect.addEventListener('change', populateDays);
+          dobYearSelect.addEventListener('change', populateDays);
+
+          // Initial population of years and days
+          populateYears();
+          populateDays();
+        });
+      </script>
+
+
+      <!--Other Scripts-->
+      <script src="scripts/clients_login_form.js"></script>
+
+  </body>
+
+</html>
