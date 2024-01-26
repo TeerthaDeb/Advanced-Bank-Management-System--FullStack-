@@ -45,6 +45,43 @@ npm install ejs
 npm install body-parser
 ```
 # 3. Set up the database (ensure MySQL is installed).
+## For Clients table:
+```bash
+CREATE TABLE clients (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(10),
+    firstName VARCHAR(50),
+    lastName VARCHAR(50),
+    occupation VARCHAR(100),
+    placeOfOccupation VARCHAR(100),
+    birthDay INT,
+    birthMonth INT,
+    birthYear INT,
+    streetAddress VARCHAR(255),
+    additionalInformation TEXT,
+    zipCode VARCHAR(20),
+    place VARCHAR(100),
+    country VARCHAR(100),
+    countryCode VARCHAR(10),
+    phoneNumber VARCHAR(20),
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(255),
+    accountCreatedBy INT,
+    lastAccountModifiedBy INT,
+    lastIssueWithID INT,
+    checkingAccounts INT,
+    savingAccounts INT,
+    visas INT,
+    masterCards INT,
+    checkAccountNumber VARCHAR(20),
+    savingAccountNumber VARCHAR(20),
+    creditCardNumber VARCHAR(20),
+    checkingAccountBalance DECIMAL(15, 2),
+    savingAccountBalance DECIMAL(15, 2),
+    creditCardBalance DECIMAL(15, 2),
+    accountCreationDate DATE
+);
+```
 
 
 
