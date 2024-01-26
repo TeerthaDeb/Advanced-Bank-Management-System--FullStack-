@@ -45,6 +45,11 @@ npm install ejs
 npm install body-parser
 ```
 # 3. Set up the database (ensure MySQL is installed).
+## Table Name:
+  make sure your table name is : 
+    ```
+    advancedbankmanagement
+    ```
 ## For Clients table:
 ```bash
 CREATE TABLE clients (
