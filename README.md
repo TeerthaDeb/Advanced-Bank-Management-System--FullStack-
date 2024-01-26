@@ -21,7 +21,7 @@ Welcome to the Advanced Bank project! This is a full-stack banking website where
 
 - **Front End:**
   - HTML
-  - CSS
+  - CSS (TailWind , BootStrap)
   - JavaScript
 
 - **Back End:**
