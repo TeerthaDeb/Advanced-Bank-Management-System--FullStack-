@@ -43,6 +43,7 @@ Welcome to the Advanced Bank project! This is a full-stack banking website where
 npm install express
 npm install ejs
 npm install body-parser
+npm install mysql
 ```
 # 3. Set up the database (ensure MySQL is installed).
 ## Table Name:
