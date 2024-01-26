@@ -38,3 +38,11 @@ app.get("/Client-s-LogIn-Form" , (req , res) =>{
 app.get("/Privacy_Policy" , (req , res) => {
     res.render("Privacy Policy" , {Year : new Date().getFullYear()})
 });
+
+app.get("/About-Bank" , (req , res) => {
+    res.render("About Advanced Bank" , {
+                                            Year : new Date().getFullYear() , 
+                                            email : "Advanced_Bank@advncdBank.com"
+                                        }
+                )
+});
