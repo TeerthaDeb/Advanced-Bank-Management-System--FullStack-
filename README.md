@@ -29,6 +29,7 @@ Welcome to the Advanced Bank project! This is a full-stack banking website where
   - Express.js
   - EJS
   - MySQL
+  - AJAX
 
 ## Setup
 
